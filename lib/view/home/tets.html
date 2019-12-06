@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+function outer(){
+         var result = new Array();
+         for(var i = 0; i < 2; i++){//注：i是outer()的局部变量
+            result[i] = function(){
+                console.log(i);
+                
+               return i;
+            }
+         }
+         return result;//返回一个函数对象数组
+         //这个时候会初始化result.length个关于内部函数的作用域链
+      }
+      var fn = outer();
+    fn[0]();//result：2
+
+    </script>
+</body>
+</html>
