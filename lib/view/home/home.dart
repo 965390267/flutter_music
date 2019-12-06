@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:music/components/home/swiper.dart';
  class HomeView  extends StatefulWidget {
   @override
   HomeViewState createState() => HomeViewState();
@@ -23,27 +24,153 @@ super.build(context);
       appBar: AppBar(
         title: Text('主页'),
       ),
-      body:Container(
-        height: 120,
-        child: new Swiper(
-        itemBuilder: (BuildContext context,int index){
-          return new Image.network("http://img.zangzhihong.com/background1.jpg",fit: BoxFit.fill,);
-        },
-        itemCount: 3,
-         viewportFraction: 0.85,
-        scale: 0.9,
-        pagination: new SwiperPagination(
-          builder: DotSwiperPaginationBuilder(size: 6,activeSize: 8,activeColor: Colors.orangeAccent
-        ),
-      
-      ),
-      autoplay: true,
-      autoplayDelay: 10000,
-      onTap: (int index){
-        print(index);
-      },
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+       
+          Expanded(
+            child: ListView(
+              scrollDirection: Axis.vertical,
+              padding: EdgeInsets.all(10),
+              children: <Widget>[
+                   SwiperBanner(),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                    Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                    Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  '妇联者仇盟',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          )
+        ],
       )
-    )
     );
   }
 }
